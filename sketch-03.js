@@ -77,7 +77,7 @@ const sketch = ({ context, width, height }) => {
         if (dist > 200) continue;
 
         context.lineWidth = math.mapRange(dist, 0, 200, 12, 1);
-        context.strokeStyle = '#ff0000'
+        context.strokeStyle = 'white'
         context.beginPath();
         context.moveTo(agent.pos.x, agent.pos.y);
         context.lineTo(other.pos.x, other.pos.y);
@@ -137,7 +137,7 @@ class Agent {
     context.translate(this.pos.x, this.pos.y);
 
     context.lineWidth = 4
-    context.fillStyle = "#c82124";
+    context.fillStyle = "white";
     context.beginPath();
     context.arc(0, 0, this.radius, 0, Math.PI * 2);
 
